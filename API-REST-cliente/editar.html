@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar editorial</title>
+    <link href="css/estilos.css" rel="stylesheet">
+    <STYLE>
+        body{
+            background-color: #A2D2FF;
+        }
+    </STYLE>
+</head>
+<body>
+    <body">
+        <form id="ingresoDatos">
+            <h1>Modificar la Editorial.</h1>
+            <div>
+                <label for="codigo_editorial">Codigo:</label>
+                <input type="text" name="codigo_editorial" id="codigo_editorial" placeholder="EDI###" required maxlength="6" disabled>
+            </div>
+            <div>
+                <label for="nombre_editorial">Nombre:</label>
+                <input type="text" name="nombre_editorial" id="nombre_editorial" placeholder="Ej. Mi Editorial" required>
+            </div>
+            <div>
+                <label for="contacto">Contacto:</label>
+                <input type="text" name="contacto" id="contacto" placeholder="Ej. José Juan" required>
+            </div>
+            <div>
+                <label for="telefono">Telefono:</label>
+                <input type="text"  name="telefono" id="telefono" placeholder="####-####" required>
+            </div>
+            <div>
+                <input type="submit" value="Guardar" class="btn" id="modificarDato">
+            </div>
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="js/modificarDatos.js"></script>
+    </body>
+</body>
+</html>
